@@ -29,7 +29,7 @@ int main() {
         std::string dateString = convertDateToString();
         std::string nameFile = "new_document_" + dateString;
         
-        std::string outputGeneral = R"(C:\\Users\\evang\\Documents\\quizzpr2\\optilearn-front\\public\\)";
+        std::string outputGeneral = R"(C:\\Users\\evang\\Documents\\quizzpr2\\optilearn-front\\public\\)"; // YOUR path
         std::string outputText = outputGeneral + nameFile + ".tex";
         std::string outputPNG = outputGeneral + nameFile + ".png";
         std::string outputPNGCrop = outputGeneral + nameFile + "C.png";
