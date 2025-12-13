@@ -24,25 +24,24 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-For now, explain for Windows. 
-It can be used as a backend to compile some `.tex` files into (cropped) png  in a selected folder.
+Create under Windows OS. 
+It can be used as a backend to compile some `.tex` files into (cropped) `.png`  in a selected folder.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![React]][React-url]
-* [![Vue][Vue.js]][Vue-url]
+* [CMake][CMake-url]
+* [vcpkg][vcpkg-url]
+* [ImageMagick][ImageMagick-url]
+* [MickTex][MickTex-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
+[CMake-url]: https://cmake.org/download/
+[vcpkg-url]: https://vcpkg.io/en/
+[ImageMagick-url]: https://imagemagick.org/script/download.php
+[MickTex-url]: https://miktex.org/download
