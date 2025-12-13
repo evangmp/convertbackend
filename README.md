@@ -66,15 +66,15 @@ There is some things that needs to be dl.
 
 All the installations
 
-1. Clone the repo (on the folder)
+1. Clone the repo (on the folder) :
    ```sh
    git clone https://github.com/evangmp/convertbackend.git
    ```
-2. Install vcpkg dependances
+2. Install vcpkg dependance :
    ```sh
    vcpkg install http-lib
    ```
-2. (bonus) Check 
+2. (bonus) Check :
    ```sh
    vcpkg list
    ```
@@ -88,7 +88,7 @@ All the installations
    cd build
    cmake .. -DCMAKE_TOOLCHAIN_FILE=C:/your/path/vcpkg/scripts/buildsystems/vcpkg.cmake
    ```
-5. Again go back on the folder, you can try to debug it: ()
+5. Again go back on the folder, you can try to debug it:
    ```sh
    cmake --build build --target convertbackend --config Debug
    cd build && .\Debug\convertbackend.exe
@@ -108,7 +108,7 @@ All the installations
 If you have a frontend, you can send an http request to the port 9001 (if you didn't change it) with a string in the body like :
 `\\documentclass{article} \\usepackage{bbold} \\pagestyle{empty} \\begin{document} test \\end{document}`
 
-For example with React and and Axios :
+For example with React and Axios :
 ```js
     const httpTex = axios.create ({
         baseURL: "http://localhost:9001",
