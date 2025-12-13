@@ -109,7 +109,7 @@ If you have a frontend, you can send an http request to the port 9001 (if you di
 `\\documentclass{article} \\usepackage{bbold} \\pagestyle{empty} \\begin{document} test \\end{document}`
 
 For example with React and and Axios :
-````js
+```js
     const httpTex = axios.create ({
         baseURL: "http://localhost:9001",
         headers: {
