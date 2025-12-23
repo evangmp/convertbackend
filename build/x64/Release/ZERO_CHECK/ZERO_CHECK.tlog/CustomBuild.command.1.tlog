@@ -1,0 +1,10 @@
+^C:\USERS\EVANG\DOCUMENTS\QUIZZPR2\CONVERTBACKEND\BUILD\CMAKEFILES\07AC0EC93D803B569848FAE9713D35AC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/evang/Documents/quizzpr2/convertbackend -BC:/Users/evang/Documents/quizzpr2/convertbackend/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/evang/Documents/quizzpr2/convertbackend/build/convertbackend.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

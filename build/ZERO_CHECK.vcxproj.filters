@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\evang\Documents\quizzpr2\convertbackend\build\CMakeFiles\07ac0ec93d803b569848fae9713d35ac\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{24ECC083-77EA-375A-9F6B-A3844A07343F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
