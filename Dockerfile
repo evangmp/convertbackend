@@ -16,23 +16,16 @@ WORKDIR /app
 COPY . .
 
 # Build the project using CMake
-RUN mkdir -p build && \
+RUN rm -rf build && mkdir -p build && \
     cd build && \
     cmake .. -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake && \
-    make && \
-    ls -l
-
-RUN cmake --build build --target convertbackend --config Debug
-
-# Verify the location of the binary
-RUN cd build && \
-    ls -l Debug
+    make 
 
 # Use a minimal base image for the final stage
 FROM alpine:latest
 
 # Copy the compiled binary from the builder stage
-COPY --from=builder app/build/Debug/convertbackend /usr/local/bin/
+COPY --from=builder app/build/convertbackend /usr/local/bin/
 
 # Run the executable by default
 CMD ["convertbackend"]
