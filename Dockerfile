@@ -9,6 +9,12 @@ RUN apt-get update && \
     /vcpkg/vcpkg install cpp-httplib && \
     rm -rf /var/lib/apt/lists/*
 
+# Install ImageMagick
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    imagemagick \
+    && rm -rf /var/lib/apt/lists/*
+
 # Create and set the working directory
 WORKDIR /app
 
@@ -23,6 +29,11 @@ RUN rm -rf build && mkdir -p build && \
 
 # Use a minimal base image for the final stage (glibc-based)
 FROM ubuntu:latest
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    texlive-latex-base \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install required libraries
 RUN apt-get update && \
