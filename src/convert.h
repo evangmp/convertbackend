@@ -18,7 +18,7 @@ void compileLatexToPDF(const std::string& latexCode, const std::string& outputTe
 
     std::string command = "pdflatex -output-directory=" + outputGeneral +  "  -interaction=nonstopmode " + outputTexPath;
     int result = std::system(command.c_str());
-    std::cout << "debog 1111"<< result << std::endl;
+    std::cout << "debog 1111 "<< result << std::endl;
     if (result != 0) {
         throw std::runtime_error("Failed to compile LaTeX to PDF.");
     }
