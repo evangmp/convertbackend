@@ -1,3 +1,3 @@
 <a id="readme-top"></a>
 
-You can build it with docker.
+I'm trying to make it usable with Docker (for now, storage problems). 
